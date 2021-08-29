@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/png" href="imgs/favicon-32x32.png" />
+  </head>
+  <body>
+    <section>
+      <header class="logo">
+        <img src="imgs/logo.svg" alt="logo" />
+      </header>
+      <main>
+        <div class="left-side">
+          <label for="bill-input">Bill</label>
+          <img class="input-icon" src="imgs/icon-dollar.svg" alt="symbol of a dollar sign" />
+          <input type="text" id="bill-input" placeholder="0" />
+          <div class="tip-label">Select Tip %</div>
+          <div class="btn-container">
+            <button class="btn tip-btn">5%</button>
+            <button class="btn tip-btn">10%</button>
+            <button class="btn tip-btn">15%</button>
+            <button class="btn tip-btn">25%</button>
+            <button class="btn tip-btn">50%</button>
+            <input type="text" id="custom" placeholder="Custom" />
+          </div>
+          <div class="group">
+            <label for="num-people">Number of People</label>
+            <div class="warning">Can't be zero</div>
+          </div>
+          <img class="input-icon" src="imgs/icon-person.svg" alt="symbol of a person" />
+          <input type="text" class="num-people" placeholder="0" />
+        </div>
+        <div class="right-side">
+          <div class="row-1">
+            <div>
+              <p class="type">Tip Amount</p>
+              <p class="slash-person">/ person</p>
+            </div>
+            <div class="tip-amount">$0.00</div>
+          </div>
+
+          <div class="row-2">
+            <div>
+              <p class="type">Total</p>
+              <p class="slash-person">/ person</p>
+            </div>
+
+            <div class="total-amount">$0.00</div>
+          </div>
+          <!-- Uncomment to add grand total functionality -->
+          <!-- <div class="row-3">
+            <div>
+              <p id="total" class="type">Total</p>
+            </div>
+
+            <div class="grand-total">$0.00</div>
+          </div> -->
+
+          <p class="msg"></p>
+          <button class="reset">Reset</button>
+        </div>
+      </main>
+    </section>
+    <script src="app.js"></script>
+  </body>
+</html>

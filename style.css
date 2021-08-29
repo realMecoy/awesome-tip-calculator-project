@@ -1,0 +1,317 @@
+:root {
+  --result: hsl(172, 67%, 45%);
+  --dark_main: hsl(183, 100%, 15%);
+  --reset_btn: hsl(183, 80%, 23%);
+  --btn_hover: hsl(172, 100%, 70%);
+  --primary_txt: hsl(184, 29%, 19%);
+  --secondary_txt: hsl(184, 14%, 56%);
+  --bg_colour: hsl(185, 41%, 84%);
+  --Light-grayish-cyan: hsl(189, 41%, 97%);
+  --white: hsl(0, 0%, 100%);
+  --warning_colour: rgb(255, 94, 0);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Mono", monospace;
+}
+html,
+body {
+  background-color: var(--bg_colour);
+}
+
+@media only screen and (max-width: 1700px) {
+  section {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  main {
+    background-color: var(--white);
+    width: 75%;
+    height: 60vh;
+    border-radius: 15px;
+    padding: 1.8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo {
+    margin-bottom: 50px;
+    color: var(--primary_txt);
+  }
+
+  /** Left side of the container **/
+  .left-side {
+    width: 50%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: center;
+  }
+  /** Bill and number of people inputs **/
+  #bill-input,
+  .num-people {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--dark_main);
+    background-color: var(--Light-grayish-cyan);
+    border: none;
+    text-align: right;
+    width: 87%;
+  }
+  #bill-input::placeholder,
+  .num-people::placeholder,
+  #custom::placeholder {
+    float: right;
+    margin-right: 1rem;
+    color: var(--secondary_txt);
+  }
+  #bill-input:focus,
+  .num-people:focus,
+  #custom:focus {
+    outline: none;
+    border: 2px solid var(--result);
+    border-radius: 5px;
+  }
+  #bill-input:focus,
+  .num-people:focus {
+    margin-top: -3px;
+  }
+  /** Input img icons **/
+  .input-icon {
+    position: relative;
+    top: 1.65rem;
+    left: 1.2rem;
+    font-size: 24px;
+    font-weight: 400;
+  }
+  .tip-label {
+    margin: 1.6rem 0;
+  }
+
+  /** Left side buttons **/
+  .btn-container {
+    width: 90%;
+    margin-left: -2%;
+    margin-bottom: 6%;
+  }
+  .btn {
+    background-color: var(--dark_main);
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    width: 28.2%;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px;
+  }
+  .btn:hover {
+    background-color: var(--btn_hover);
+    color: var(--dark_main);
+    font-weight: 700;
+    transition: ease all 0.5s;
+    cursor: pointer;
+  }
+  /** Custom percentage input **/
+  #custom {
+    background-color: var(--Light-grayish-cyan);
+    color: var(--primary_txt);
+    font-weight: 700;
+    border: none;
+    font-size: 1.2rem;
+    width: 28.2%;
+    padding: 4px;
+    border-radius: 5px;
+    margin: 5px;
+    text-align: right;
+  }
+  #custom:focus {
+    cursor: pointer;
+    color: var(--dark_main);
+  }
+
+  /** Number of people input **/
+  .warning {
+    display: none;
+    margin-left: 3rem;
+    font-weight: 400;
+    color: var(--warning_colour);
+  }
+  .warning-focus,
+  .warning-focus:focus {
+    border: 2px solid var(--warning_colour);
+    outline: none;
+    border-radius: 5px;
+  }
+  /** Group the number of people input and warning message together **/
+  .group {
+    display: flex;
+  }
+  /** Labels for inputs **/
+  label {
+    font-weight: 700;
+    color: var(--primary_txt);
+  }
+
+  /** Right side of container **/
+  .right-side {
+    background-color: var(--dark_main);
+    width: 50%;
+    height: 90%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: center;
+  }
+  .row-1,
+  .row-2 /** Uncomment and adjust for grand total functionality (,.row-3) **/ {
+    width: 85%;
+    margin: 0.5rem auto;
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  .type {
+    color: var(--white);
+  }
+  .slash-person {
+    color: var(--white);
+    font-size: 0.8rem;
+  }
+  .tip-amount,
+  .total-amount /** Uncomment for grand total functionality (,.grand-total) **/ {
+    height: 35%;
+    color: var(--result);
+    font-weight: 700;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #total {
+    font-size: 1.5rem;
+  }
+
+  /** Reset button **/
+  .reset {
+    width: 85%;
+    height: 3rem;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: var(--dark_main);
+    border: none;
+    border-radius: 8px;
+    margin: 4.8rem auto 0 auto;
+    padding: 0;
+    background-color: var(--reset_btn);
+  }
+  .reset:hover {
+    background-color: hsl(172, 100%, 70%);
+    font-weight: 700;
+    transition: ease all 0.5s;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 890px) {
+  main {
+    background-color: var(--white);
+    width: 84%;
+    height: 60vh;
+    border-radius: 15px;
+    padding: 1.8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #custom,
+  .btn {
+    width: 27.5%;
+  }
+  #custom::placeholder {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 784px) {
+  main {
+    background-color: var(--white);
+    width: 84%;
+    height: 60vh;
+    border-radius: 15px;
+    padding: 1.8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #custom,
+  .btn {
+    width: 45%;
+    margin: 2px;
+  }
+  #custom::placeholder {
+    font-size: 1.2rem;
+    margin-right: 15px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .logo {
+    margin-top: 420px;
+  }
+  main {
+    background-color: var(--white);
+    width: 100%;
+    height: 900px;
+    padding-top: 10%;
+    padding-bottom: 20%;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .left-side {
+    width: 100%;
+    padding-left: 4.5%;
+    text-align: center;
+  }
+  label {
+    font-size: 0.8rem;
+  }
+  .tip-label {
+    margin-bottom: 1rem;
+  }
+  .btn-container {
+    width: 98%;
+  }
+  #custom,
+  .btn {
+    width: 45.5%;
+  }
+  #custom::placeholder {
+    margin-right: 35%;
+  }
+  #bill-input,
+  .num-people {
+    width: 95%;
+  }
+  .right-side {
+    background-color: var(--dark_main);
+    width: 90%;
+    margin-top: 30px;
+  }
+  .reset {
+    margin-bottom: 30px;
+  }
+}
