@@ -4,7 +4,7 @@ const warningMsg = document.querySelector(".warning");
 const warningMsgFocus = document.querySelector(".warning-focus");
 const tipAmount = document.querySelector(".tip-amount");
 const totalAmount = document.querySelector(".total-amount");
-//* When uncommented, will
+//* When uncommented, will retrieve class for use
 // const grandTotal = document.querySelector(".grand-total");
 const customPercent = document.getElementById("custom");
 const btns = document.querySelectorAll(".tip-btn");
