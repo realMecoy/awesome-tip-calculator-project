@@ -22,7 +22,7 @@ body {
 }
 
 @media only screen and (max-width: 1700px) {
-  section {
+  main {
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -30,7 +30,7 @@ body {
     align-items: center;
     flex-direction: column;
   }
-  main {
+  section {
     background-color: var(--white);
     width: 75%;
     height: 60vh;
@@ -223,7 +223,7 @@ body {
 }
 
 @media only screen and (max-width: 890px) {
-  main {
+  section {
     background-color: var(--white);
     width: 84%;
     height: 60vh;
@@ -244,7 +244,7 @@ body {
 }
 
 @media only screen and (max-width: 784px) {
-  main {
+  section {
     background-color: var(--white);
     width: 84%;
     height: 60vh;
@@ -269,7 +269,7 @@ body {
   .logo {
     margin-top: 420px;
   }
-  main {
+  section {
     background-color: var(--white);
     width: 100%;
     height: 900px;
