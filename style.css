@@ -155,7 +155,7 @@ body {
     display: flex;
   }
   /** Labels for inputs **/
-  label {
+  .label {
     font-weight: 700;
     color: var(--primary_txt);
   }
@@ -286,7 +286,7 @@ body {
     padding-left: 4.5%;
     text-align: center;
   }
-  label {
+  .label {
     font-size: 0.8rem;
   }
   .tip-label {
