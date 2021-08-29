@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Github Pages](https://realmecoy.github.io/https---github.com-realMecoy-tip-calculator-project/)
+- Live Site URL: [Github Pages](https://realmecoy.github.io/awesometip-calculator-project/)
 
 ## My process
 
