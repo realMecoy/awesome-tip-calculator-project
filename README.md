@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution Page](https://www.frontendmentor.io/solutions/a-purely-html-css-and-javascript-solution-n4Fal2ee3)
+- Solution URL: [Solution Page](https://www.frontendmentor.io/solutions/a-purely-html-css-and-javascript-solution-3Zd9abLvd)
 - Live Site URL: [Github Pages](https://realmecoy.github.io/awesome-tip-calculator-project/)
 
 ## My process
