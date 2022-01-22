@@ -64,13 +64,15 @@ body {
     background-color: var(--Light-grayish-cyan);
     border: none;
     text-align: right;
+    padding-right: 1rem;
     width: 87%;
   }
+
   #bill-input::placeholder,
   .num-people::placeholder,
   #custom::placeholder {
-    float: right;
-    margin-right: 1rem;
+    /* float: right; */
+    /* margin-right: 1rem; */
     color: var(--secondary_txt);
   }
   #bill-input:focus,
@@ -130,7 +132,7 @@ body {
     padding: 4px;
     border-radius: 5px;
     margin: 5px;
-    text-align: right;
+    text-align: center;
   }
   #custom:focus {
     cursor: pointer;
